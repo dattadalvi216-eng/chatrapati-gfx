@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chatrapati GFX</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#080808;
+    color:white;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:#111;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #333;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+    color:#ffb000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{
+    color:#ffb000;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    padding:50px 8%;
+    gap:40px;
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin:15px 0;
+}
+
+.hero h1 span{
+    color:#ffb000;
+}
+
+.hero p{
+    color:#bbb;
+    font-size:19px;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 25px;
+    background:#ffb000;
+    color:#111;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.photo{
+    width:320px;
+    height:420px;
+    object-fit:cover;
+    border-radius:25px;
+    border:3px solid #ffb000;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    color:#ffb000;
+    margin-bottom:40px;
+}
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    color:#bbb;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:#151515;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    border:1px solid #333;
+}
+
+.card h3{
+    color:#ffb000;
+    margin:15px 0;
+}
+
+.card p{
+    color:#aaa;
+    line-height:1.6;
+}
+
+.work{
+    min-height:180px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#151515;
+    border-radius:20px;
+    border:1px dashed #555;
+    color:#888;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    color:#bbb;
+    font-size:18px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#111;
+    color:#888;
+}
+
+@media(max-width:800px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav a{
+        margin:5px;
+        font-size:13px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .photo{
+        width:260px;
+        height:350px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="logo">
+Chatrapati GFX
+</div>
+
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#work">My Work</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<p>CREATIVE • DESIGN • EDITING</p>
+
+<h1>
+Welcome to <span>Chatrapati GFX</span>
+</h1>
+
+<p>
+Creative Graphic Design, Photo Editing
+and Social Media Designs.
+</p>
+
+<a href="#work" class="btn">
+View My Work
+</a>
+
+</div>
+
+
+<!-- तुझा फोटो नंतर इथे लावू शकतो -->
+
+<img
+src="profile.png"
+class="photo"
+alt="Chatrapati GFX"
+>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="title">
+About Chatrapati GFX
+</h2>
+
+<p class="about">
+
+Welcome to Chatrapati GFX.
+
+I create creative photo edits, graphic designs,
+posters, banners and social media designs.
+
+This website is my creative portfolio where
+I will showcase my latest work.
+
+</p>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2 class="title">
+My Services
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📸 Photo Editing</h3>
+
+<p>
+Creative photo editing, retouching
+and professional photo enhancements.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🎨 Graphic Design</h3>
+
+<p>
+Posters, banners, advertisements
+and creative graphic designs.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>📱 Social Media</h3>
+
+<p>
+Instagram posts, reels covers,
+Facebook posts and social media creatives.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MY WORK -->
+
+<section id="work">
+
+<h2 class="title">
+My Work
+</h2>
+
+<div class="cards">
+
+<div class="work">
+Photo Editing
+</div>
+
+<div class="work">
+Poster Design
+</div>
+
+<div class="work">
+Social Media Design
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2 class="title">
+Contact Me
+</h2>
+
+<p>
+For Photo Editing & Graphic Design
+</p>
+
+<a href="#" class="btn">
+WhatsApp
+</a>
+
+<a href="#" class="btn">
+Instagram
+</a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 Chatrapati GFX
+<br>
+All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
